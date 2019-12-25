@@ -26,7 +26,9 @@ title: 基础配置
 npm i -D axios qs
 ```
 配置 axios, 参考这里的提交 [271252f](https://github.com/kscript/im-example/commit/271252f0fa96a4ca26b122cb7b1cdb03ee15d0fb).  
+::: tip axios使用说明
 axios 一般会结合 store 来使用, 只有**当用户的某种行为, 触发了 store 的 action, 需要后端数据支持时**, 我们才会去请求数据, 因此**不需要给外部留下明显的调用方式**.  
+:::
 
 ## eventBus
 - 需要自己配置  
@@ -34,3 +36,17 @@ axios 一般会结合 store 来使用, 只有**当用户的某种行为, 触发�
 eventBus 实际上是一个单独的 vue 实例, 在示例项目中, 充当一个全局的 EventEmitter.   
 eventBus 的基本配置, 参考这里的提交 [8d3eb8a](https://github.com/kscript/im-example/commit/8d3eb8ac55b5af92b22c914199d3d580422857c2) , 后面还有对 eventBus 进行更详细一些的划分, 见 [f823466](https://github.com/kscript/im-example/commit/f8234661ee81b1f34b04d81ecaf3a5d19b9d9a90)  
 由于示例项目基本上是围绕 **用户 ↔ SDK** 的交互, 因此整体思想是: 逻辑层事件驱动(用户事件,sdk事件) + UI层数据驱动, 而我们的**核心代码, 大部分会在 eventBus 上**.  
+
+## mock
+
+
+## 其它配置
+- 需要自己配置  
+
+|  |
+| -- |
+| 配置文件 |
+| 工具方法 |
+| 类型描述 |
+
+查看提交 [9ac35b7](https://github.com/kscript/im-example/commit/9ac35b7092870ddd2357e3db7945a13a9e5d8d9d)
