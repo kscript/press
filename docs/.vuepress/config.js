@@ -3,7 +3,8 @@ const devSidebar = () => {
         title: '开发',
         collapsable: false,
         children: [
-            '/dev/env'
+            '/dev/env',
+            '/dev/base'
         ]
     }]
     return config;
