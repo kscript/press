@@ -13,7 +13,7 @@ yarn global add @vue/cli
 ## 创建项目
 以下配置可能和原有项目创建时有所不同, 仅供参考
 ``` cmd
-> vue create im-exmaple
+> vue create im-example
 
 Vue CLI v4.1.1
 ? Please pick a preset: Manually select features
