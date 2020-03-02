@@ -9,6 +9,25 @@ const devSidebar = () => {
             '/dev/utils',
             '/dev/sdk'
         ]
+    },
+    {
+        title: '部署',
+        collapsable: false,
+        children: [
+            '/deploy/',
+            '/deploy/build',
+        ]
+    }]
+    return config;
+}
+const deploySidebar = () => {
+    const config = [{
+        title: '部署',
+        collapsable: false,
+        children: [
+            '/deploy/',
+            '/deploy/build',
+        ]
     }]
     return config;
 }
@@ -29,7 +48,8 @@ module.exports = {
             }
         ],
         sidebar: {
-            '/dev/': devSidebar()
+            '/dev/': devSidebar(),
+            '/deploy/': deploySidebar()
         }
     },
     head: [
