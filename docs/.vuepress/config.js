@@ -9,14 +9,6 @@ const devSidebar = () => {
             '/dev/utils',
             '/dev/sdk'
         ]
-    },
-    {
-        title: '部署',
-        collapsable: false,
-        children: [
-            '/deploy/',
-            '/deploy/build',
-        ]
     }]
     return config;
 }
