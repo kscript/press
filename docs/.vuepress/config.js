@@ -7,7 +7,8 @@ const devSidebar = () => {
             '/dev/env',
             '/dev/base',
             '/dev/utils',
-            '/dev/sdk'
+            '/dev/sdk',
+            '/dev/unread'
         ]
     }]
     return config;
